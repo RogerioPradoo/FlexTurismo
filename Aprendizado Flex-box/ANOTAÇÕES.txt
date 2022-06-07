@@ -1,0 +1,25 @@
+FlexBox: Usado como modelo unidimensional e pode oferecer espaços entre itens e recursos de alinhamentos.
+DisplayFlex: é uma tag q envolve itens aonde é aplicada e transforma todos seus itens filho em flex itens */ Container: '---' */  pode ser usada atraves de div, span, h1,h2.. <a/>
+Flex Container: tem Propriedades relacionadas.
+* Display: Iniciador do container, *flex-direction: vai fazer o direcionamentos dos itens seja eles em linhas ou colunas, *flex-wrap: vai ser aplicado pra quebra de linha ou não, *flex-flow: é uma abreviação com flex-direction e flex-wrap
+*Aling-items: vai alinhar os intens de acordo com o eixo do seu container, *Aling-content: vai alinhar as linhas desses container,  *justify-itens: vai direcionar os itens do container de acordo com a sua direção
+==
+Flex-items: São os elementos filhos diretos do flex-container e tambem pode se tornar flex container aplicado ao display.
+também possuem propriedades relacionadas:
+*Flex-Grow: define o fator do crescimento, flax-basis: vai denifir o tamanho inicial do itens antes do restante do container, *flex-shrink: define a capacidade de redução
+*Flex: apreviação do grow, basis, shrink, *Order: ordem de distribuição e listagem dos itens, *aling-self: vai denifir o alinhamento do inten especifico do container.
+===
+
+Flex-container... :
+display-flex HTML/ <body>                                           CSS/
+<div class='flex'>                                                               .flex{ display: flex}, em vez dos itens estiver de cima para baixo ira estar da esqueda para a direita
+    <div class='item'>item 1</div> // e assim vai         
+</div>
+</body>
+
+
+flex-direction: define a direção dos flex-items q sao colocados no flex-container vem de forma padrão row da esquerda p direita 1,2... e ao contrairo utiliza row-reverse 2, 1. Os eixos column: ordem de cima p baixo e so conta como uma unica columa, e temos o column-reverse de baixo p cima
+flex-wrap: por padrao temos o rowrap não permite quebra de linha, temos o wrap que permite a quebra de linha assim q algum dos flex não couber no container liberando espaço para baixo, e o wrap-reverse é o mesmo porem liberando espaço para cima.
+justify-content:  *flex-start: vai fazer o alinhamento no inicio do container, *flex-end: vai levar os itens de acordo com a sobra do espaço ao final do container respeitando o final do container, *center: vai trazer todos os elementos ao centro do container, *space-between: cria um espaço igual aos elementos, dentre o 1 a proximo do container a esquerda e o ultimo a direita do container, *space-around: vai tratar o espaço do meio maior q o inicial e o final.
+Aling-items: ele é diferente porque não precisas de altura do container, Tipos de alinhamentos: *center: alinhar os itens ao centro, *stretch: padrao, faz com o que os itens cresça igual, *flex-start, *flex-end, *baseline: alinhamento de acordo com a linha base dos itens
+Aling-content: ressponsavel pelo alinhamentos da linhas no eixo vertical do container, precisa q o container: utiliza a quebra de linha e precisa q o container seja maior q a altura das linhas, TIPOS: *center:, *strecht: sempre vai pegar o maior de exemplo, *flex-start, *flex-end, *space-between, *space-around: o espaço do meio sao duas vezes maior q o inicial e o final.
